@@ -61,6 +61,8 @@ std::string normalize (std::string& first) {
   return first + stars;
 }
 
+// предполагается, что в реальной ситуации книга заполняется и затем нечасто обновляется,
+// чаще поступают запросы на совпадение паттернов.
 void PhoneBook::update_num_str_() {
   if (!was_addition_) {
     return;
