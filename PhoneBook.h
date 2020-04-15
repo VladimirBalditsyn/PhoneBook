@@ -24,7 +24,8 @@ public:
   // Возвращает вектор фамилий по первым цифрам номера
   std::vector<std::string> GetFromFirstFigures(std::string first_fig);
 
-  // Возвращает вектор фамилий подходящих под паттерн со '*'
+  // Возвращает вектор фамилий подходящих под паттерн со '*' Ассимптотика - 
+  // O(количество номеров + число вхождений совпадений паттерна)
   std::vector<std::string> GetFromPattern(const std::string& pattern);
 
 private:
